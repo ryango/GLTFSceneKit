@@ -1379,6 +1379,7 @@ public class GLTFUnarchiver {
             //let flipW = keyPath == "rotation"
             //let keyframeAnimation = try self.loadAnimationSampler(index: index, sampler: samplerIndex)
             let group = try self.loadAnimationSampler(index: index, sampler: samplerIndex, flipW: flipW)
+            group.usesSceneTimeBase = true
             let keyframeAnimation = group.animations![0] as! CAKeyframeAnimation
             guard let animationKeyPath = keyPathMap[keyPath] else {
                 throw GLTFUnarchiveError.NotSupported("loadAnimation: animation key \(keyPath) is not supported")
