@@ -1308,6 +1308,9 @@ public class GLTFUnarchiver {
         group.animations = animations
         group.repeatCount = .infinity
         
+        guard animations.count > 0 else {
+            return group
+        }
         let step = animations.count
         let dataLength = values.count / step
         guard dataLength == keyTimes.count else {
