@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A17302F28F0D9B700A84933 /* GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17302E28F0D9B700A84933 /* GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift */; };
+		0A17303028F0D9B700A84933 /* GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17302E28F0D9B700A84933 /* GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift */; };
 		1213286D231A535600083524 /* GLTFExtrasTargetNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213286C231A535600083524 /* GLTFExtrasTargetNames.swift */; };
 		12132870231A552900083524 /* GLTFExtrasTargetNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213286C231A535600083524 /* GLTFExtrasTargetNames.swift */; };
 		46A8CD2726E6B240008819AB /* GLTFSceneKit+BundleFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A8CD2626E6B240008819AB /* GLTFSceneKit+BundleFinder.swift */; };
@@ -185,6 +187,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A17302E28F0D9B700A84933 /* GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift; sourceTree = "<group>"; };
 		1213286C231A535600083524 /* GLTFExtrasTargetNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLTFExtrasTargetNames.swift; sourceTree = "<group>"; };
 		46A8CD2626E6B240008819AB /* GLTFSceneKit+BundleFinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GLTFSceneKit+BundleFinder.swift"; sourceTree = "<group>"; };
 		491BC4F9276F0A7A00E7A448 /* GLTFVRM_VRMSpringBone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLTFVRM_VRMSpringBone.swift; sourceTree = "<group>"; };
@@ -300,6 +303,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A17302D28F0D98100A84933 /* KHR_lights_punctual */ = {
+			isa = PBXGroup;
+			children = (
+				0A17302E28F0D9B700A84933 /* GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift */,
+			);
+			path = KHR_lights_punctual;
+			sourceTree = "<group>";
+		};
 		49356775211573F500F3C28F /* VRM */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,6 +359,7 @@
 		DD2E982B1F4CF55400D47C89 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0A17302D28F0D98100A84933 /* KHR_lights_punctual */,
 				DD2E982D1F4CF5B800D47C89 /* ExtensionList.swift */,
 				DD2E982F1F4CF6FA00D47C89 /* KHR_materials_common */,
 				DD9BFA7A1F9C0EBB00542D5B /* KHR_materials_pbrSpecularGlossiness */,
@@ -737,6 +749,7 @@
 				DD3EB07A1F524783009F32D2 /* GLTFAccessorSparse.swift in Sources */,
 				DD3EB09A1F524788009F32D2 /* ExtensionList.swift in Sources */,
 				DD3EB07B1F524783009F32D2 /* GLTFAccessorSparseIndices.swift in Sources */,
+				0A17303028F0D9B700A84933 /* GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift in Sources */,
 				DD3EB0981F524783009F32D2 /* GLTFTexture.swift in Sources */,
 				49DFAA3326A4FC9F0009965E /* GLTFVRM_VRM.swift in Sources */,
 				DD3EB0971F524783009F32D2 /* GLTFSkin.swift in Sources */,
@@ -792,6 +805,7 @@
 				DD10459C1F4772E3004B20CE /* GLTFErrors.swift in Sources */,
 				DD2E982E1F4CF5B800D47C89 /* ExtensionList.swift in Sources */,
 				DDE6FD611F466F3600CB11D6 /* GLTFAccessorSparse.swift in Sources */,
+				0A17302F28F0D9B700A84933 /* GLTFKHRLightsPunctual_GLTFKHRLightsPunctual.swift in Sources */,
 				DDE6FD621F466F3600CB11D6 /* GLTFAccessorSparseIndices.swift in Sources */,
 				49DFAA3226A4FC9F0009965E /* GLTFVRM_VRM.swift in Sources */,
 				DDE6FD7F1F466F3600CB11D6 /* GLTFTexture.swift in Sources */,
@@ -1128,12 +1142,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = EF37D6UQZ9;
+				DEVELOPMENT_TEAM = YDBPAF5KR5;
 				INFOPLIST_FILE = "$(SRCROOT)/Sample/iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFSceneKitSample;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFSceneKitSampleryg;
 				PRODUCT_NAME = GLTFSceneKitSample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
@@ -1147,12 +1161,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = EF37D6UQZ9;
+				DEVELOPMENT_TEAM = YDBPAF5KR5;
 				INFOPLIST_FILE = "$(SRCROOT)/Sample/iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.3.0;
-				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFSceneKitSample;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.0spec.GLTFSceneKitSampleryg;
 				PRODUCT_NAME = GLTFSceneKitSample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;

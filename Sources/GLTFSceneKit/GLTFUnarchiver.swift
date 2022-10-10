@@ -25,6 +25,8 @@ public class GLTFUnarchiver {
     internal var scene: SCNScene?
     internal var scenes: [SCNScene?] = []
     internal var cameras: [SCNCamera?] = []
+    internal var lights: [SCNLight?] = []
+    internal var lightNodes: [Int: [SCNNode]] = [:]
     internal var nodes: [SCNNode?] = []
     internal var skins: [SCNSkinner?] = []
     internal var animationChannels: [[CAAnimation?]?] = []
@@ -122,6 +124,10 @@ public class GLTFUnarchiver {
         
         if let cameras = self.json.cameras {
             self.cameras = [SCNCamera?](repeating: nil, count: cameras.count)
+        }
+        
+        if let lights = (self.json.extensions?.extensions["KHR_lights_punctual"] as? GLTFKHRLightsPunctual_GLTFKHRLightsPunctualExtension)?.data?.lights {
+            self.lights = [SCNLight?](repeating: nil, count: lights.count)
         }
         
         if let nodes = self.json.nodes {
