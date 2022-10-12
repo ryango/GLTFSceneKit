@@ -14,6 +14,8 @@ struct GLTFKHRLightsPunctual_GLTFKHRLightsPunctualExtension: GLTFCodable {
         case directional
       }
       
+      // TODO: spot cone angles
+      
       let _color: [Float]?
       var color: [Float] {
         get { return self._color ?? [1, 1, 1] }
@@ -73,9 +75,10 @@ struct GLTFKHRLightsPunctual_GLTFKHRLightsPunctualExtension: GLTFCodable {
         
         // Blender exporter exports watts directly although the glTF side is supposed to be in candela
         // https://github.com/KhronosGroup/glTF-Blender-IO/issues/564
-        // It seems to be pretty accurate for Blender -> SceneKit without conversion
         // TODO: proper conversion as defined in spec
-        scnLight.intensity = CGFloat(light.intensity)
+
+        // SceneKit lighting is in lumens, intensity is in candela
+        scnLight.intensity = CGFloat(light.intensity / 12.57)
         
         // only should affect > 0
         if light.range > 0 {
